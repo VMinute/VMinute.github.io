@@ -1,7 +1,145 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+
+  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+    <amp-img width="404" height="720" alt="Cover" layout="responsive" src="{{ site.baseurl }}{{ site.cover }}" media="(max-width: 415px)"></amp-img>
+    <amp-img height="720" alt="Cover" layout="fixed-height" src="{{ site.baseurl }}{{ site.cover }}" media="(min-width: 416px)"></amp-img>
+    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+      <header class="p3">
+        <h1 class="ampstart-fullpage-hero-heading mb0 hanuman">
+          <span class="ampstart-fullpage-hero-heading-text title">
+            {{ site.title }}
+          </span>
+        </h1>
+        <h2 class="ampstart-fullpage-hero-heading mb0">
+          <span class="ampstart-fullpage-hero-heading-text description">
+            {{ site.description }}
+          </span>
+        </h2>
+    </header>
+    {% if site.cover %}
+    <footer class="absolute left-0 right-0 bottom-0">
+      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+    </footer>
+    {% else %}
+    <footer class="absolute left-0 right-0 bottom-0">
+      <a class="ampstart-read py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+    </footer>
+    {% endif %}
+    </figcaption>
+  </figure>
+
+<main id="content" role="main" class="content">
+
+  <div class="cf frame">
+
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <section class="post-excerpt" itemprop="description">
+              <p>One day one of my kids asked me what was my job.</p>
+
+              <p>"I write programs for computers," I said <br/>
+              "computers like this one" I added showing him one of the Toradex's modules on my desk<br/> 
+              "It doesn't look like a computer!" he replied "You must be joking, dad. What's your real job?"</p>
+              
+              <p>For the last 20 years (or since the end of the previous millennium, if you prefer), I've been developing software mostly on embedded devices. Things that don't look like a computer, as my son brilliantly defined them.</p>
+              
+              <p>I started writing this kind of software when the "Internet of Things" was not even in marketing people's dreams and when to connect to the internet at high speed you had to use a 56K modem (I had a 14.4k modem at that time).</p> 
+              
+              <p>I started writing software in 1993, during my service in the Italian army (it was mandatory to spend one year in the army at that time).<br/>
+              I wrote management software, used to keep track of documents and people's role inside the organization and, like most of life in the army, it was deadly boring.</p>
+              
+              <p>At that time I didn't know if writing software was what I wanted to do for the rest of my life.<br/>
+              But then I found a much better job and started writing file-transfer middleware under MS-DOS.<br/>
+              I know that this doesn't sound more exciting than management applications for the army, but it actually was.<br/>
+              The company was very dynamic and funny (a foosball table was one of the first pieces of furniture we got in the office) and writing that code was quite challenging.<br/>
+              I helped to port it to Windows 3.1 and then Windows 95 and Windows NT.<br/>
+              I had to deal with obscure stuff like NetBIOS, SNA, Trumpet Winsock, and I could probably still do a handshake with a modem by just whistling, after too many hours spent testing dial-up modems and fancy AT commands used to make them call from exotic places (dialling a phone number is much less trivial than it seems) or connect over very bad phone lines.</p>
+              
+              <p>But the most challenging part was that the software had to run overnight, transferring the data generated during the day, and doing that reliably with almost no assistance from humans.<br/>
+              It had to be reliable and able to recover from many different error conditions, keeping data flowing between remote places like shops or warehouses and the head offices of many different companies.<br/>
+              It's probably still running on a good number of PCs nowadays and doing its job, mostly without any interaction with human beings.</p>
+              
+              <p>When the file transfer application had all the features customers were asking and Microsoft decided that Win32 was a stable API not needing any major revision in the coming years, I started focusing on custom projects. And most of those projects had the same requirements as the file-transfer system: run reliably without much help from humans. And, most of the times, with also no PCs involved.<br/>
+              It's not that I don't like PCs or human beings. I just don't want too much interaction...<br/>
+              Thinking about a system able to survive without much external help and recovering from failures or errors without someone pushing the "retry" button was challenging and interesting. It still is challenging and interesting.</p>
+              
+              <p>I started working mostly on Windows CE, beginning from version 2.12. I wrote applications talking with washing machines, ovens, heating systems and radiator valves. I tested my applications on the back seat of a scooter of the famous Monza racing track, inside factories and warehouses or on garbage trucks.</p>
+              
+              <p>And every time I was trying to explain to people that I was not writing software running on PCs, phones or tablets I kept getting the same comment "You must be joking..." and most of the time "now please fix my printer".</p>
+              
+              <p>I also become a Microsoft MVP in 2009 and started working as a trainer on different embedded/related topics. I also like to do sessions at events (if you think that some of the topics on this blog are interesting enough for your audience, just let me know).</p>
+              
+              <p>In 2010, just a few weeks after my first son was born, I started working as a freelance for many different companies in Italy and around Europe.</p>
+              
+              <p>Since October 2013 I joined Toradex, in Switzerland, developing mostly drivers and BSPs for Windows Embedded Compact.</p>
+              
+              <p>I didn't go to university and I like to learn by doing. This is how I learnt to use an oscilloscope, to write applications in many different programming languages (including a short and painful experience with Java applets on Netscape around 1996), to write drivers for different operating systems and to not touch any wire coming from a power supply (this is better learnt by not doing).</p>
+              
+              <p>I consider myself a maker. I bought some of the first Arduino released from production line (duemilanove or diecimila?) and even managed to write a book about the Raspberry Pi (it's in Italian and probably a bit outdated now, but if you want to check it, it's still available on Amazon).</p>
+              
+              <p>In this blog, I'll just write about my experiences "playing" with different technologies, using them on different kind of hardware (working for a hardware manufacturer has some good benefits for people who like to play with devices), and trying to learn something in the process.</p>
+              
+              <p>All the ideas and opinions you'll read here are mine.<br/>
+              I plan to publish all the code and things I develop during my experiments as open source, together with as much information as I can to allow you to reproduce them, but I can't promise that those experiments are good or safe to try at home :)</p>            
+          </section>
+        </div>
+      </article>
+
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            {% for author in site.data.authors %}
+              {% if author[1].username == post.author %}
+                {% if author[1].assets %}<amp-img width="24" height="24" class="author-thumb" layout="responsive" src="{{ site.baseurl }}{{author[1].assets}}" alt="{{author[1].name}}"/></amp-img>{% endif %}
+                <a href="{{site.baseurl}}authors/#{{author[1].username}}">{{author[1].name}}</a>
+              {% endif %}
+            {% endfor %}
+
+            {% if post.tags.size > 0 %}
+                in
+                {% for tag in post.tags %}
+                    {% if forloop.index == post.tags.size %}
+                       <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
+                    {% else %}
+                       <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+              <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
+
+</main>
+
+{% include footer.html %}
