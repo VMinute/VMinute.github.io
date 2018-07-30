@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an IoT Device (part II)
-date: 2018-06-13 12:00:00
+date: 2018-07-29 12:00:00
 tags: arduino esp32
 author: vminute
 ---
