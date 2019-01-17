@@ -4,8 +4,8 @@ description: A blog about embedded computing, IoT and programming any kind of de
 cover: assets/images/cover.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
-baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://vminute.github.io" # the base hostname & protocol for your site
+baseurl: /
+url: https://vminute.github.io/ # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 # Social
