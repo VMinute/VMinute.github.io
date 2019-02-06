@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure IoT Edge on Torizon
-date: 2012-02-06 12:00:00
+date: 2019-02-06 12:00:00
 tags: azure iot edge torizon
 author: vminute
 ---
