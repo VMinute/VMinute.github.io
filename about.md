@@ -15,4 +15,4 @@ Since 1999 I have been working mostly on embedded devices (IoT was no longer a t
 
 I am a Microsoft MVP since 2009.
 
-In 2013 I joined <a title="Toradex" href="www.toradex.com">Toradex</a>, working on BSPs and drivers.
+In 2013 I joined <a title="Toradex" href="https://www.toradex.com">Toradex</a>, working on BSPs and drivers.
